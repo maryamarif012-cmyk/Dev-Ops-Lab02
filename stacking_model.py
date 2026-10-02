@@ -83,7 +83,7 @@ xgb.fit(X_train, y_train)
 print("XGBoost completed.")
 print("\nTraining LightGBM...")
 lgb = LGBMClassifier(
-    n_estimators=50,
+    n_estimators=60, # increased number of estimators for better performance
     max_depth=3,
     learning_rate=0.1,
     class_weight="balanced",
